@@ -11,29 +11,32 @@ body {
     overflow: hidden;
 }
 
-h1 {
-    font-size: 40px;
-    color: #ff69b4;
-    text-align: center;
+.hearts-container {
     position: absolute;
-    width: 100%;
     top: 50%;
     transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    pointer-events: none;
 }
 
-#loveTextLeft {
-    left: 10%;
+#heartsLeft {
+    left: 0;
+    text-align: left;
 }
 
-#loveTextRight {
-    right: 10%;
+#heartsRight {
+    right: 0;
+    text-align: right;
 }
 
 .heart {
-    position: absolute;
     font-size: 48px;
     color: #ff69b4;
     animation: float 3s ease-in infinite;
+    opacity: 0;
 }
 
 @keyframes float {
@@ -50,4 +53,3 @@ h1 {
         opacity: 0;
     }
 }
-
