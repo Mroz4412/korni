@@ -1,0 +1,40 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff69b4;
+    text-align: center;
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    color: #ff69b4;
+    animation: float 3s ease-in infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-200px) scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-400px) scale(0);
+        opacity: 0;
+    }
+}
